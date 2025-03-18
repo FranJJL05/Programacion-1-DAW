@@ -16,5 +16,4 @@ public class TestMenu {
         int opcionSeleccionada = menu.capturaOpcion();
         System.out.println("Has seleccionado: " + opcionSeleccionada);
     }
-    azdasdasd
 }
