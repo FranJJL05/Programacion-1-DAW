@@ -1,0 +1,9 @@
+1- inicio 
+2- leer base_mayor 
+3- leer base_menor 
+4- leer altura 
+5- area<- (base_mayor + base_menor)*altura/2
+6- mostrar area
+7- fin
+
+

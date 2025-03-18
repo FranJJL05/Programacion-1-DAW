@@ -1,0 +1,7 @@
+INICIO
+LEER edad 
+Si edad <18 
+  MOTRAR "Es menor de edad"
+Sino
+  MOSTRAR "Es mayor de edad"
+FIN

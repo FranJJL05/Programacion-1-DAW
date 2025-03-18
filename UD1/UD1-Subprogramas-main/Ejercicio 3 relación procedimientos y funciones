@@ -1,0 +1,20 @@
+//Escribe una función que devuelva el área de un círculo dado su radio. Recuerda que para calcular el
+//área, la fórmula es ? * r2
+
+
+Funcion resultado<- área (r)
+	resultado<-PI*(r^2)
+FinFuncion
+
+
+Algoritmo areas
+	
+	Escribir "Introduce el radio del circulo: "
+	Leer rad
+	
+	radio<- área(rad)
+	Escribir "El área del circulo es: ", radio
+	
+	
+	
+FinAlgoritmo

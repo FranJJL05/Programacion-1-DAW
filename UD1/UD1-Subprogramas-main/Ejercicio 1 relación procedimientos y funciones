@@ -1,0 +1,52 @@
+SubProceso opciones
+	Escribir ">>> MENÚ DE OPCIONES <<< "
+	
+	Escribir "1. Números del 1 al 10."
+	Escribir "2. Tabla de multiplicar del 8."
+	Escribir "3. Primeras diez potencias de 2."
+	Escribir "4. Salir."
+FinSubproceso
+
+SubProceso listanumeros
+	Para i<-0 Hasta 10 Hacer
+		Escribir i
+	Fin Para
+	
+FinSubProceso
+
+SubProceso tablamultiplicar
+	Escribir "Tabla de multiplicar del 8: "
+	Para i<-0 Hasta 10 Hacer
+		Escribir 8*i
+	Fin Para
+FinSubProceso
+
+SubProceso potencia
+	Para i<-0 Hasta 10 Hacer
+		Escribir 2^i
+	Fin Para
+FinSubProceso
+
+
+Algoritmo menuopciones
+	
+	Repetir
+		opciones
+		Escribir "Introduzca opción (1-4): "
+		Leer num
+		
+		Si num<=4 Y num>=1 Entonces
+			Segun num Hacer
+				1:
+					listanumeros
+				2:
+					tablamultiplicar
+				3:
+					potencia
+			Fin Segun
+		SiNo
+			Escribir "Introduce un número entre 1 y 4"
+		Fin Si
+	Hasta Que num=4
+	
+FinAlgoritmo

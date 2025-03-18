@@ -1,0 +1,12 @@
+Algoritmo ejercicio6
+	//Realizar un algoritmo que muestre la tabla de multiplicar de un número introducido por teclado.
+	
+	Escribir "Introduce un número para mostrar su tabla de multiplicar:"
+    Leer numero
+	
+    
+    Para i Desde 1 Hasta 10 Hacer
+        Escribir numero, " x ", i, " = ", numero * i
+    Fin Para
+
+FinAlgoritmo

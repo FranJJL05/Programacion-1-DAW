@@ -1,0 +1,17 @@
+Algoritmo ejercicio14
+	//Dado un número de dos cifras, diseñe un algoritmo que permita obtener el número invertido.
+	//Ejemplo, si se introduce 23 que muestre 32.
+	Escribir "Ingrese un número de dos cifras:"
+    Leer num
+    Si num < 10 o num > 99 Entonces
+        Escribir "Por favor, ingrese un número válido de dos cifras."
+    Sino
+		
+        cifra1 = trunc(num / 10)          
+        cifra2 = num % 10      
+		
+        numInvertido = (cifra2 * 10) + cifra1
+		
+        Escribir "El número invertido es:", numInvertido
+    Fin Si
+FinAlgoritmo

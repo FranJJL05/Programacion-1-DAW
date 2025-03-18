@@ -1,0 +1,19 @@
+Algoritmo ejercicio4
+	//Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras
+	//separadas por espacios), realiza un programa que cuente cuántas palabras tiene.
+	
+	Escribir "Introduce la frase"
+	Leer frase
+	
+	contador<-1
+	i<-0
+	Repetir
+		extrae<- Subcadena(frase,i,i)
+		Si extrae=" " Entonces
+			contador<- contador+1
+		FinSi
+		i<- i+1
+	Hasta Que i=Longitud(frase)
+	
+	Escribir "La frase tiene ", contador, " palabras"
+FinAlgoritmo

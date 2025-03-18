@@ -1,0 +1,24 @@
+Algoritmo ejercicio5
+	//Escribir un programa que imprima todos los números pares entre dos números que se le pida al
+	//usuario.
+	
+	Escribir "Ingrese el primer número:"
+    Leer num1
+	
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+	
+    Si num1 > num2 Entonces
+        num1<-num2
+		num2<-num1
+    Fin Si
+	
+    Escribir "Los números pares entre ", num1 , " y ", num2 , " son: "
+	
+    Para i desde num1 hasta num2 Hacer
+        Si i % 2 = 0 Entonces
+            Escribir i
+        Fin Si
+    Fin Para
+	
+FinAlgoritmo

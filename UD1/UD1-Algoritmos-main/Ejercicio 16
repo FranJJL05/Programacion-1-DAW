@@ -1,0 +1,19 @@
+Algoritmo ejercicio16
+	// Dos vehículos viajan a diferentes velocidades (v1 y v2) y están distanciados por una distancia d. El que
+	//está detrás viaja a una velocidad mayor. Se pide hacer un algoritmo para ingresar la distancia entre los
+	//dos vehículos (km) y sus respectivas velocidades (km/h) y con esto determinar y mostrar en qué
+	//tiempo (minutos) alcanzará el vehículo más rápido al otro.
+	Escribir 'Introduce la distancia entre los dos vehículos (km):'
+	Leer distancia
+	Escribir 'Introduce la velocidad del vehículo que está adelante (km/h):'
+	Leer v1
+	Escribir 'Introduce la velocidad del vehículo que está detrás (km/h):'
+	Leer v2
+	Si v2<=v1 Entonces
+		Escribir 'El vehículo detrás debe tener más velocidad que el de adelante.'
+	SiNo
+		tiempo <- distancia/(v2-v1)
+		tiempoMin <- tiempo*60
+		Escribir 'El tiempo que tardará el vehículo detrás en alcanzar al de adelante es:', tiempoMin, 'minutos.'
+	FinSi
+FinAlgoritmo

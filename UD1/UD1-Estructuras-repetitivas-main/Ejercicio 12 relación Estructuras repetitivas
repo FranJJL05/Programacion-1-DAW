@@ -1,0 +1,25 @@
+Algoritmo ejercicio12
+	//Hacer un programa que muestre un cronómetro, indicando las horas, minutos y segundos.
+	
+	horas = 0
+    minutos = 0
+    seg = 0
+	
+    MIENTRAS (verdadero) HACER
+		Esperar 1 Segundo
+        seg<- seg + 1
+		
+        SI (seg >= 60) Entonces
+            seg = 0
+            minutos = minutos + 1
+        FIN SI
+		
+        SI (minutos >= 60) Entonces
+            minutos = 0
+            horas = horas + 1
+        FIN SI
+		
+        Escribir horas " horas ", minutos " minutos ", seg " segundos"
+		
+    FIN MIENTRAS
+FinAlgoritmo

@@ -1,0 +1,23 @@
+INICIO 
+nota<- 0; suma <- 0
+i<- 0 
+LEER nota 
+suma <- nota + suma
+i<- i + 1 
+si i< 10 IR a paso 4
+promedio <- suma/10 o suma/i 
+MOSTRAR promedio 
+FIN
+
+
+INICIO 
+nota<- 0; suma <- 0
+LEER nº calificaciones
+i<- 0 
+LEER nota 
+suma <- nota + suma
+i<- i + 1 
+si i< nº calificaciones IR a paso 4
+promedio <- suma/10 o suma/i 
+MOSTRAR promedio 
+FIN

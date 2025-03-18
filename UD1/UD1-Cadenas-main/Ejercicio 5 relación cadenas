@@ -1,0 +1,24 @@
+Algoritmo ejercicio5
+	//Si tenemos una cadena con un nombre y apellidos, realizar un programa que muestre las iniciales en
+	//mayúsculas.
+	iniciales <- ""
+	i<-0
+	Escribir Sin Saltar "Introduce tu nombre y apellidos:"
+	Leer cad;
+	
+	Mientras Subcadena(cad,i,i)=" " Hacer
+		i<-i+1;
+	FinMientras
+	
+	iniciales<-concatenar(iniciales,subcadena(cad,i,i));
+	
+	Para i<-i hasta Longitud(cad)-1 Hacer
+		Si Subcadena(cad,i,i)=" " Entonces
+			Mientras Subcadena(cad,i,i)=" " Y i<=Longitud(cad) Hacer
+				i<-i+1;
+			FinMientras
+			iniciales<-concatenar(iniciales,subcadena(cad,i,i))
+		FinSi
+	FinPara
+	Escribir "Iniciales:",Mayusculas(iniciales)
+FinAlgoritmo
