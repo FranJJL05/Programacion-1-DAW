@@ -1,23 +1,21 @@
 import java.util.ArrayList;
-
 public class AlmArticulo {
-    private ArrayList<Articulo> almacen;
+    private ArrayList<Articulo> articulos;
 
     public AlmArticulo() {
-        this.almacen = new ArrayList<>();
+        this.articulos = new ArrayList<>();
     }
 
     public void almacena(Articulo articulo) {
-        almacen.add(articulo);
+        articulos.add(articulo);
     }
 
-    //Sobrecarga del método toString para imprimir todos los articulos
     @Override
     public String toString() {
-        String resultado = "";
-        for (Articulo articulo : almacen) {
-            resultado += articulo + "\n";
+        StringBuilder sb = new StringBuilder();
+        for (Articulo articulo : articulos) {
+            sb.append(articulo.toString()).append("\n");
         }
-        return resultado;
+        return sb.toString();
     }
 }
