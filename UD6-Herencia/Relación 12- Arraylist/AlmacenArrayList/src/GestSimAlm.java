@@ -26,7 +26,7 @@ public class GestSimAlm {
 
     public void baja(String codigo) {
         for (int i = 0; i < almacen.size(); i++) {
-            if (almacen.get(i).getCodigo().equals(codigo)) {
+            if (almacen.get(i).getCodigo(codigo).equals(codigo)) {
                 almacen.remove(i);
                 return;
             }

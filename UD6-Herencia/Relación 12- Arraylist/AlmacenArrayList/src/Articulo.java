@@ -13,43 +13,47 @@ public class Articulo {
         this.stock = 0;
     }
 
-    public void getCodigo(String codigo) {
+    //metodo get  y set de codigo
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-
-    public String setCodigo() {
+    //metodo get de codigo
+    public String getCodigo() {
         return codigo;
     }
 
-    public void getDescripcion(String descripcion) {
+    //metodo get y set de descripcion
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
-    public String setDescripcion() {
+    //metodo get de descripcion
+    public String getDescripcion() {
         return descripcion;
     }
-
-    public void getPrecioCompra(double precioCompra) {
+   
+    //metodo get y set de precioCompra
+    public void setPrecioCompra(double precioCompra) {
         this.precioCompra = precioCompra;
     }
-
-    public double setPrecioCompra() {
+    //metodo get de precioCompra
+    public double getPrecioCompra() {
         return precioCompra;
     }
 
-    public void getPrecioVenta(double precioVenta) {
+    //metodo get y set de precioVenta
+    public void setPrecioVenta(double precioVenta) {
         this.precioVenta = precioVenta;
     }
-
-    public double setPrecioVenta() {
+    //metodo get de precioVenta
+    public double getPrecioVenta() {
         return precioVenta;
     }
-
-    public void getStock(int stock) {
+    //metodo get y set de stock
+    public void setStock(int stock) {
         this.stock = stock;
     }
-
-    public int setStock() {
+    //metodo get de stock
+    public int getStock() {
         return stock;
     }
 
