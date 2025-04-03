@@ -2,10 +2,10 @@ package Ejercicio7;
 
 public class Compra {
 
-    String producto;
+    Productos producto;
     int cantidad;
 
-    public Compra(String producto, int cantidad){
+    public Compra(Productos producto, int cantidad){
         this.producto = producto;
         this.cantidad = cantidad;
     }
@@ -18,11 +18,11 @@ public class Compra {
         this.cantidad = cantidad;
     }
 
-    public String getProducto() {
+    public Productos getProducto() {
         return producto;
     }
 
-    public void setProducto(String producto) {
+    public void setProducto(Productos producto) {
         this.producto = producto;
     }
 }
