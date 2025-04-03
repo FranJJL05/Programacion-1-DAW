@@ -33,7 +33,7 @@ public class Supermercado {
             if (productos.containsKey(producto)) {
                 System.out.println("Cantidad: ");
                 cantidad = entrada.nextInt();
-                entrada.nextLine();
+                entrada.nextLine();     /*Limpiar el bufet del scanner, para que no me repita producto: dos veces */
                 carro.add(new Compra(producto, cantidad));
             }
         }
