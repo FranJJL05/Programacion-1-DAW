@@ -41,6 +41,7 @@ public class Supermercado {
         System.out.println("\n");
         System.out.printf("%-15s %-10s %-11s %-10s\n", "Producto", "Precio", "Cantidad", "Subtotal");
         System.out.println("-------------------------------------------------");
+        
         for (Compra compra : carro) {
             String producto1 = compra.getProducto();
             double precio1 = productos.get(compra.getProducto());
