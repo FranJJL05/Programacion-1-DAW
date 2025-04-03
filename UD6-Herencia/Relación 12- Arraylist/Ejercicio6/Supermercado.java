@@ -10,7 +10,7 @@ public class Supermercado {
         String producto;
         int cantidad;
         double total1 = 0;
-
+        
         Scanner entrada = new Scanner(System.in);
 
         productos.put("avena", 2.21);
