@@ -79,6 +79,7 @@ public class Supermercado {
         }
 
         if (descuento != Descuentos.SIN_DTO) {
+            System.out.println("-------------------------------------------------");
             System.out.println("Descuento aplicado: " + (descuento.getValor() * 100) + "%");
         }
 
