@@ -8,12 +8,4 @@ public class Ejer3 {
             throw new Exception("Índice fuera de rango: " + posicion);
         }
     }
-    public static void main(String[] args) {
-        try {
-            System.out.println(caracterEn("Hola mundo", 4));
-            System.out.println(caracterEn("Hola", 10));
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }
 }
