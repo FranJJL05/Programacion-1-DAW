@@ -21,5 +21,5 @@ public class Ejer6 {
 }
 /*Se lanza la excepcion RuntimeEException, luego se propaga al main, pero éste no tiene ningún manejador de excepciones
  * Solucion: o no propagar la excepcion, y manejar el método de la excepcion, o propagar la excepcion al main,y crear un
- * manejador de excepcion en main
+ * manejador de excepciones en main
  */
