@@ -19,7 +19,20 @@ public class Ejer6 {
     }
 
 }
-/*Se lanza la excepcion RuntimeEException, luego se propaga al main, pero éste no tiene ningún manejador de excepciones
- * Solucion: o no propagar la excepcion, y manejar el método de la excepcion, o propagar la excepcion al main,y crear un
+/*
+ * Se lanza la excepcion RuntimeEException, luego se propaga al main, pero éste
+ * no tiene ningún manejador de excepciones
+ * Solucion: o no propagar la excepcion, y manejar el método de la excepcion, o
+ * propagar la excepcion al main,y crear un
  * manejador de excepciones en main
+ * 
+ * public static void main(String[] args) {
+ * double[] v = new double[15];
+ * try{
+ * System.out.println(accesoPorIndice(v, 16));
+ * }
+ * catch(RuntimeException e){
+ * System.out.println("Error!!!" + e.getMessage);
+ * }
+ * }
  */

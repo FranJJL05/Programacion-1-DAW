@@ -1,6 +1,6 @@
 package UD7_Excepciones.Relacion_13_Excepciones;
 
-public class Ejer10 {
+public class Ejer11 {
     public static void main(String[] args) {
         try {
             System.out.println(metodo());
@@ -10,16 +10,17 @@ public class Ejer10 {
         }
     }
 
-    public static int metodo() {
+    public static int metodo() throws NumberFormatException {
         int valor = 0;
         try {
             valor = valor + 1;
-            valor = valor + Integer.parseInt("hola");
+            valor = valor + Integer.parseInt("W");
             valor = valor + 1;
             System.out.println("Valor al final del try: " + valor);
         } catch (NumberFormatException e) {
             valor = valor + Integer.parseInt("42");
             System.out.println("Valor al final del catch: " + valor);
+            throw e;
         } finally {
             valor = valor + 1;
             System.out.println("Valor al final del finally: " + valor);
@@ -30,5 +31,4 @@ public class Ejer10 {
     }
 }
 
-/*Cambiando el valor Integer.parseInt(42) por "hola" me muestra solo a partir del valor al final del catch, el valor final del tryu no me lo mustra porque daría error. */
-
+/*El valor del Integer no es un numero, pasaria lo mismo que en el ejercicio anterior. */     

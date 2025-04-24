@@ -21,3 +21,5 @@ public class Ejer7 {
 }
 /*Lo que ocurría era que el programa principal faltaba añadir el throws Exception 
 y el RuntimeException de accesoPorIndice había que cambiarlo por Exception*/
+
+/* */

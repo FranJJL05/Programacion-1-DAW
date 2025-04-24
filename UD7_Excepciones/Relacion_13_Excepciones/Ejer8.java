@@ -18,4 +18,6 @@ public class Ejer8 {
         System.out.println(accesoPorIndice(v, 16));
     }
 }
-/*Lo que ocurría era que el programa principal faltaba añadir el throws Exception */
+/*La excepción se lanza y no se maneja en main, por lo que el programa termina abruptamente con un error.
+
+El catch dentro de accesoPorIndice no hace nada útil, ya que solo vuelve a lanzar la misma excepción. */
