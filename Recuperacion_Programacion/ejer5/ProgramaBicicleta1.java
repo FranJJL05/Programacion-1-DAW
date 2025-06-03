@@ -1,3 +1,5 @@
+package Recuperacion_Programacion.ejer5;
+
 public class ProgramaBicicleta1 {
     public static void main(String[] args) {
         Bicicleta1 bici1 = new Bicicleta1();

@@ -1,3 +1,5 @@
+package Recuperacion_Programacion.ejer5;
+
 public class Bicicleta1 {
     public String color = "negro";
     public int velocidad = 0;
