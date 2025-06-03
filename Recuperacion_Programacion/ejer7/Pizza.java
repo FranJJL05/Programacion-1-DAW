@@ -4,10 +4,11 @@ public class Pizza {
     private String tamaño;
     private String tipo;
     private String estado = "pedida";
-    private int totalPedidas = 0, totalServidas = 0;
+    private int totalPedidas = 0;
+    private int totalServidas = 0;
 
 
-    public Pizza(String tamaño, String tipo, int totalPedidas) {
+    public Pizza(String tamaño, String tipo) {
         this.tamaño = tamaño;
         this.tipo = tipo;
         this.totalPedidas++;
@@ -18,6 +19,7 @@ public class Pizza {
             estado = "servida";
             System.out.println("La pizza está servida");
             totalServidas = totalServidas++;
+            System.out.println("El total de pizzas servidas es de " + totalServidas       );
         }else{
             System.out.println("La pizza ya se ha servido");
         }
