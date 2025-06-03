@@ -1,4 +1,4 @@
-package Recuperacion_Programacion.ejer5;
+package ejer5;
 
 public class Bicicleta1 {
     public String color = "negro";
