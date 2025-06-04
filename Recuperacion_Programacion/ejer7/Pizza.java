@@ -3,42 +3,47 @@ package ejer7;
 public class Pizza {
     private String tamaño;
     private String tipo;
-    private String estado = "pedida";
-    private int totalPedidas = 0;
-    private int totalServidas = 0;
+    private String estado;
+    private static int pedidas = 0;
+    private static int servidas = 0;
 
 
     public Pizza(String tamaño, String tipo) {
         this.tamaño = tamaño;
         this.tipo = tipo;
-        this.totalPedidas++;
+        this.estado = "pedida";
+        this.pedidas++;
     }
 
     public void sirve(){
         if (estado.equals("pedida")) {
             estado = "servida";
             System.out.println("La pizza está servida");
-            totalServidas = totalServidas++;
-            System.out.println("El total de pizzas servidas es de " + totalServidas       );
+            servidas = servidas++;
+            System.out.println("El total de pizzas servidas es de " + servidas);
         }else{
             System.out.println("La pizza ya se ha servido");
         }
     }
 
-    public int getTotalPedidas() {
-        return totalPedidas;
+    public static int getTotalPedidas() {
+        return pedidas;
     }
 
     public void setTotalPedidas(int totalPedidas) {
-        this.totalPedidas = totalPedidas;
+        this.pedidas = totalPedidas;
     }
 
-    public int getTotalServidas() {
-        return totalServidas;
+    public static int getTotalServidas() {
+        return servidas;
     }
 
     public void setTotalServidas(int totalServidas) {
-        this.totalServidas = totalServidas;
+        this.servidas = totalServidas;
     }
 
+    @Override
+    public String toString() {
+        return "Pizza " + this.tipo + " tamaño " + this.tamaño + " " + this.estado;
+    }
 }
