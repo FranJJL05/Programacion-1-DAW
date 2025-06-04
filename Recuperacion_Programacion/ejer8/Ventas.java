@@ -60,7 +60,7 @@ public class Ventas {
                     System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
             }
 
-            System.out.println(); 
+            System.out.println();    
         } while (opcion != 3);
 
         scanner.close();
