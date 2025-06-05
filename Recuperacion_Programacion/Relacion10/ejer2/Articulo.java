@@ -63,6 +63,9 @@ public class Articulo{
         this.stock = stock;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Código del artículo: " + codigo + " Descripción del artículo: " + descripcion;
+    }
 
 }
