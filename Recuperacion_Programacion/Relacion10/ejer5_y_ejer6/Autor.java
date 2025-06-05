@@ -1,4 +1,4 @@
-package Relacion10.ejer5;
+package Relacion10.ejer5_y_ejer6;
 
 public class Autor {
     private String nombre;
