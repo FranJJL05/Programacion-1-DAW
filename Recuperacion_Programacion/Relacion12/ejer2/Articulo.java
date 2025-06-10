@@ -8,11 +8,13 @@ public class Articulo{
     private int stock;
     public Object getCodigo;
 
+    /*Constructor */
     public Articulo(String codigo, String descripcion){
         this.codigo = codigo;
         this.descripcion = descripcion;
     }
 
+    /*Métodos */
     public String getCodigo() {
         return codigo;
     }
