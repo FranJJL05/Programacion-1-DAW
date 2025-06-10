@@ -21,11 +21,20 @@ public class PruebaArticulo {
         return false;
     }
 
+    public Articulo[] getArticulos() {
+        return articulos;
+    }
+
+    public void setArticulos(Articulo[] articulos) {
+        this.articulos = articulos;
+    }
+
+
     @Override
     public String toString() {
         String result = "";
         for (int i = 0; i < articulos.length; i++) {
-            if (articulos[i] == null) {
+            if (articulos[i] != null) {
                 result += "Articulo " + (i + 1) + ":\n" +
                             articulos[i].toString() + ":\n" +
                             "--------------------------\n";
