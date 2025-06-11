@@ -1,4 +1,4 @@
-package ejer7;
+package Relacion9.ejer7;
 
 public class PedidosPizza {
     public static void main(String[] args) {

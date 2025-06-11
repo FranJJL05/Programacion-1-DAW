@@ -1,3 +1,4 @@
+package Relacion9.ejer6;
 public class Fraccion {
    int numerador;
    int denominador;

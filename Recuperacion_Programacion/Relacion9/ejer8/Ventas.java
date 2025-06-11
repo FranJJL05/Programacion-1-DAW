@@ -1,4 +1,4 @@
-package ejer8;
+package Relacion9.ejer8;
 
 import java.util.Scanner;
 

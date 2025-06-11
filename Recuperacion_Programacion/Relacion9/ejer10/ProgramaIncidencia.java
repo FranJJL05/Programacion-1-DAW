@@ -1,4 +1,4 @@
-package ejer10;
+package Relacion9.ejer10;
 
 public class ProgramaIncidencia {
     

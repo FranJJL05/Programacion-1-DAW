@@ -1,3 +1,4 @@
+package Relacion9.ejer6;
 import java.util.Scanner;
 
 public class ProgramaFraccion {

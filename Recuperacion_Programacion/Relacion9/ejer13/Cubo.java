@@ -1,4 +1,4 @@
-package ejer13;
+package Relacion9.ejer13;
 
 public class Cubo {
     private double capacidad;

@@ -1,4 +1,4 @@
-package ejer9;
+package Relacion9.ejer9;
 
 public class Tiempo {
     private int horas, minutos, segundos;

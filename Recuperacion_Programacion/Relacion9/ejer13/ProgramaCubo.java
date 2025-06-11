@@ -1,4 +1,4 @@
-package ejer13;
+package Relacion9.ejer13;
 
 public class ProgramaCubo {
      public static void main(String[] args) {

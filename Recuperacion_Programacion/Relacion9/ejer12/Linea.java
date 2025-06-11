@@ -1,4 +1,4 @@
-package ejer12;
+package Relacion9.ejer12;
 
 public class Linea {
     

@@ -1,4 +1,4 @@
-package ejer7;
+package Relacion9.ejer7;
 
 public class Pizza {
     private String tamaño;

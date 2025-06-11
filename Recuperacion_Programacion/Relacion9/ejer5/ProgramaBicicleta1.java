@@ -1,4 +1,4 @@
-package ejer5;
+package Relacion9.ejer5;
 
 public class ProgramaBicicleta1 {
     public static void main(String[] args) {

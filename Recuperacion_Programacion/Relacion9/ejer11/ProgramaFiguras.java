@@ -1,4 +1,4 @@
-package ejer11;
+package Relacion9.ejer11;
 
 public class ProgramaFiguras {
     public static void main(String[] args) {

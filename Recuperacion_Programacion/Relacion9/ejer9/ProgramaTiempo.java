@@ -1,4 +1,4 @@
-package ejer9;
+package Relacion9.ejer9;
 
 public class ProgramaTiempo{
     public static void main(String[] args) {

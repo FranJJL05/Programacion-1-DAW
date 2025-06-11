@@ -1,4 +1,4 @@
-package ejer11;
+package Relacion9.ejer11;
 
 public class Rectangulo {
     private int base;

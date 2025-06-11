@@ -1,4 +1,4 @@
-package ejer5;
+package Relacion9.ejer5;
 
 public class Bicicleta1 {
     public String color = "negro";
