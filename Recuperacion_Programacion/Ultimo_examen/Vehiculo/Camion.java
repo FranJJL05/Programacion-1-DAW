@@ -2,6 +2,7 @@ package Ultimo_examen.Vehiculo;
 
 public class Camion extends Comercial {
 
+    /*Atributos */
     private boolean volquete;
     private boolean cerrado;
     private static int totalCamiones = 0;
@@ -16,6 +17,7 @@ public class Camion extends Comercial {
         totalCamiones ++;
     }
 
+    /*Métodos */
     public boolean isVolquete() {
         return volquete;
     }
