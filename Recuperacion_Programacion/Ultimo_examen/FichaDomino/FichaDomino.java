@@ -9,15 +9,13 @@ public class FichaDomino {
         this.lado2 = lado2;
     }
 
-    public String encaja(FichaDomino otraFicha) {
-        String resultado = " ";
+    public boolean encaja(FichaDomino otraFicha) {
         if (lado1 == otraFicha.lado1 || lado1 == otraFicha.lado2 || lado2 == otraFicha.lado1 || lado2 == otraFicha.lado2) {
-            resultado += "true";
+            return true;
         } else {
-            resultado += "false";
+            return false;
         }
 
-        return resultado;
     }
 
     @Override

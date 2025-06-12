@@ -73,7 +73,7 @@ public abstract class Vehiculo {
     public abstract void devolver();
 
     public boolean estaAlquilado( ){
-        return alquilado;
+        return alquilado;   
     }
 
 
