@@ -9,8 +9,8 @@ public class Camion extends Comercial {
 
     /* Constructor */
     public Camion(String matricula, String marca, String modelo, String cargaMaz, double volumen, boolean volquete,
-            boolean cerrado) {
-        super(matricula, marca, modelo, cargaMaz, volumen);
+            boolean cerrado, long kmRecorridos) {
+        super(matricula, marca, modelo, cargaMaz, volumen, kmRecorridos);
         this.volquete = volquete;
         this.cerrado = cerrado;
         totalCamiones ++;
@@ -53,6 +53,10 @@ public class Camion extends Comercial {
         if (alquilado) {
             System.out.println("El camión ha sido devuelto");
             alquilado = false;
+            kmRecorridos += 1000;
+            if (kmRecorridos > KMLIMITE) {
+                System.out.println("¡Ha superado el límite de kilómetros del camión!");
+            }
         } else {
             System.out.println("El camión no se puede devolver porque no está alquilado");
         }

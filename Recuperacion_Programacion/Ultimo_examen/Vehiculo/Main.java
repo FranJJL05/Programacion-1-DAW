@@ -6,15 +6,15 @@ public class Main {
     public static void main(String[] args) {
         ArrayList <Vehiculo> lista = new ArrayList<>();
 
-        Turismo t1 =  new Turismo(null, null, null, null, 0, 0);
-        Turismo t2 = new Turismo(null, null, null, null, 0, 0);
-        Turismo t3 = new Turismo(null, null, null, null, 0, 0);
+        Turismo t1 =  new Turismo(null, null, null, null, 0, 0, 1000);
+        Turismo t2 = new Turismo(null, null, null, null, 0, 0, 0);
+        Turismo t3 = new Turismo(null, null, null, null, 0, 0, 0);
 
-        Furgo f1 = new Furgo(null, null, null, null, 0, 0, false, false);
-        Furgo f2 = new Furgo(null, null, null, null, 0, 0, false, false);
+        Furgo f1 = new Furgo(null, null, null, null, 0, 0, false, false, 0);
+        Furgo f2 = new Furgo(null, null, null, null, 0, 0, false, false, 0);
 
-        Camion c1 = new Camion(null, null, null, null, 0, false, false);
-        Camion c2 = new Camion(null, null, null, null, 0, false, false);
+        Camion c1 = new Camion(null, null, null, null, 0, false, false, 0);
+        Camion c2 = new Camion(null, null, null, null, 0, false, false, 0);
 
         lista.add(t1);
         lista.add(t2);
@@ -40,6 +40,5 @@ public class Main {
         System.out.println("Furgonetas creadas: " + Furgo.getTotalFurgonetas());
         System.out.println("Camiones creados: " + Camion.getTotalCamiones());
         System.out.println("Vehículos creados: " + Vehiculo.getTotalVehiculos());
-
     }
 }

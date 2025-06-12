@@ -9,10 +9,11 @@ public abstract class Vehiculo {
     protected static int totalVehiculos;
 
     /*Constructor */
-    public Vehiculo(String matricula, String marca, String modelo){
+    public Vehiculo(String matricula, String marca, String modelo, long kmRecorridos){
         this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
+        this.kmRecorridos = kmRecorridos;
         totalVehiculos ++;
     }
 
@@ -60,6 +61,7 @@ public abstract class Vehiculo {
     public static void setTotalVehiculos(int totalVehiculos) {
         Vehiculo.totalVehiculos = totalVehiculos;
     }
+    
 
     public void alquilar(){
         if (!alquilado) {

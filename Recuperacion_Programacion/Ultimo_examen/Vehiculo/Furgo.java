@@ -6,12 +6,12 @@ public class Furgo extends Comercial {
     private boolean baca;
     private boolean puertaLateral;
     private static int totalFurgonetas = 0;
-    private int KMLIMITE = 2000;;
+    private int KMLIMITE = 2000;
 
     /* Constructor */
     public Furgo(String matricula, String marca, String modelo, String cargaMaz, double volumen, int nPlazas,
-            boolean baca, boolean puertaLateral) {
-        super(matricula, marca, modelo, cargaMaz, volumen);
+            boolean baca, boolean puertaLateral, long kmRecorridos) {
+        super(matricula, marca, modelo, cargaMaz, volumen, kmRecorridos);
         this.nPlazas = nPlazas;
         this.baca = baca;
         this.puertaLateral = puertaLateral;
@@ -64,6 +64,10 @@ public class Furgo extends Comercial {
         if (alquilado) {
             System.out.println("La furgoneta ha sido devuelta");
             alquilado = false;
+            kmRecorridos += 500;
+            if (kmRecorridos > KMLIMITE) {
+                System.out.println("¡Ha superado el límite de kilómetros de la furgo!");
+            }
         } else {
             System.out.println("La furgoneta no se puede devolver porque no está alquilado");
         }

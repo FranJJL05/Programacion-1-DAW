@@ -9,14 +9,13 @@ public class Turismo extends Vehiculo {
     private int KMLIMITE = 1000;
 
     /* Constructor */
-
-    public Turismo(String matricula, String marca, String modelo, String color, int nPlazas, int nPuertas) {
-        super(matricula, marca, modelo);
+    public Turismo(String matricula, String marca, String modelo, String color, int nPlazas, int nPuertas, long kmRecorridos) {
+        super(matricula, marca, modelo, kmRecorridos);
         this.color = color;
         this.nPlazas = nPlazas;
         this.nPuertas = nPuertas;
+        this.kmRecorridos = kmRecorridos;
         totalTurismos ++;
-        this.kmRecorridos = 1000;
     }
 
     public String getColor() {
@@ -64,6 +63,10 @@ public class Turismo extends Vehiculo {
         if (alquilado) {
             System.out.println("EL turismo ha sido devuelto");
             alquilado = false;
+            kmRecorridos += 100;
+            if (kmRecorridos > KMLIMITE) {
+                System.out.println("¡Ha superado el límite de kilómetros del turismo!");
+            }
         } else {
             System.out.println("El turismo no se puede devolver porque no está alquilado");
         }

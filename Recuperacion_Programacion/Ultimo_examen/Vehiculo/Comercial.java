@@ -7,8 +7,8 @@ public abstract class Comercial extends Vehiculo{
     protected static int totalComerciales = 0;
 
     /*Constructor */
-    public Comercial(String matricula, String marca, String modelo, String cargaMaz, double volumen) {
-        super(matricula, marca, modelo);
+    public Comercial(String matricula, String marca, String modelo, String cargaMaz, double volumen, long kmRecorridos) {
+        super(matricula, marca, modelo, kmRecorridos);
         this.cargaMaz = cargaMaz;
         this.volumen = volumen;
         totalComerciales ++;
