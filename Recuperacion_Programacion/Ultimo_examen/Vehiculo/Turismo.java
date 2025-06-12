@@ -6,18 +6,16 @@ public class Turismo extends Vehiculo {
     private int nPlazas;
     private int nPuertas;
     private static int totalTurismos = 0;
-    private int KMLIMITE;
+    private int KMLIMITE = 1000;
 
     /* Constructor */
 
-    public Turismo(String matricula, String marca, String modelo, String color, int nPlazas, int nPuertas,
-            int kMLIMITE) {
+    public Turismo(String matricula, String marca, String modelo, String color, int nPlazas, int nPuertas) {
         super(matricula, marca, modelo);
         this.color = color;
         this.nPlazas = nPlazas;
         this.nPuertas = nPuertas;
-        KMLIMITE = kMLIMITE;
-        this.totalTurismos ++;
+        totalTurismos ++;
         this.kmRecorridos = 1000;
     }
 
@@ -63,11 +61,11 @@ public class Turismo extends Vehiculo {
 
     @Override
     public void devolver() {
-        if (alquilado = true) {
+        if (alquilado) {
             System.out.println("EL turismo ha sido devuelto");
             alquilado = false;
         } else {
-            System.out.println("El turismo no se puede dcevolver porque no está alquilado");
+            System.out.println("El turismo no se puede devolver porque no está alquilado");
         }
     }
 

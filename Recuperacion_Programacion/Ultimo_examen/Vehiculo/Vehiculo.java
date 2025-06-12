@@ -62,7 +62,7 @@ public abstract class Vehiculo {
     }
 
     public void alquilar(){
-        if (alquilado = false) {
+        if (!alquilado) {
             System.out.println("El vehículo ha sido alquilado");
             alquilado = true;
         }else{
