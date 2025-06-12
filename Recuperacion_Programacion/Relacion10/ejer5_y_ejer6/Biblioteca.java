@@ -22,7 +22,7 @@ public class Biblioteca{
         Prestamos presta1 = new Prestamos("hoy", "mañana", libro1, "yo");
         System.out.println(presta1);
 
-         System.out.println("------------");
+        System.out.println("------------");
         Prestamos presta2 = new Prestamos("ayer", "pasado mañana", libro2, "el");
         System.out.println(presta2);
         
