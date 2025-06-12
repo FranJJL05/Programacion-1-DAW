@@ -66,6 +66,8 @@ public class Turismo extends Vehiculo {
             kmRecorridos += 100;
             if (kmRecorridos > KMLIMITE) {
                 System.out.println("¡Ha superado el límite de kilómetros del turismo!");
+            }else{
+                System.out.println("Has realizado " + kmRecorridos + "km");
             }
         } else {
             System.out.println("El turismo no se puede devolver porque no está alquilado");
