@@ -67,6 +67,8 @@ public class Furgo extends Comercial {
             kmRecorridos += 500;
             if (kmRecorridos > KMLIMITE) {
                 System.out.println("¡Ha superado el límite de kilómetros de la furgo!");
+            }else{
+                System.out.println("Has realizado " + kmRecorridos + "km");
             }
         } else {
             System.out.println("La furgoneta no se puede devolver porque no está alquilado");

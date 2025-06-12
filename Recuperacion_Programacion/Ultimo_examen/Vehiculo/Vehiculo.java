@@ -61,7 +61,7 @@ public abstract class Vehiculo {
     public static void setTotalVehiculos(int totalVehiculos) {
         Vehiculo.totalVehiculos = totalVehiculos;
     }
-    
+
 
     public void alquilar(){
         if (!alquilado) {

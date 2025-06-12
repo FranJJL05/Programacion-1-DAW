@@ -56,6 +56,8 @@ public class Camion extends Comercial {
             kmRecorridos += 1000;
             if (kmRecorridos > KMLIMITE) {
                 System.out.println("¡Ha superado el límite de kilómetros del camión!");
+            }else{
+                System.out.println("Has realizado " + kmRecorridos + "km");
             }
         } else {
             System.out.println("El camión no se puede devolver porque no está alquilado");

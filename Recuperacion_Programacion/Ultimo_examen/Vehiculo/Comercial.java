@@ -38,4 +38,8 @@ public abstract class Comercial extends Vehiculo{
         Comercial.totalComerciales = totalComerciales;
     }
     
+    @Override
+    public String toString() {
+        return super.toString() + " Carga Max: " + cargaMaz + " Volumen: " + volumen;
+    }
 }

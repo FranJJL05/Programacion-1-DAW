@@ -40,5 +40,6 @@ public class Main {
         System.out.println("Furgonetas creadas: " + Furgo.getTotalFurgonetas());
         System.out.println("Camiones creados: " + Camion.getTotalCamiones());
         System.out.println("Vehículos creados: " + Vehiculo.getTotalVehiculos());
+
     }
 }
